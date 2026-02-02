@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - ParticleContainer
+  - Enemy
+  - Building
+  - Wall
+  - Ground
+  - Death
+  - Checkpoint
+  - Confiner
+  - Hazard
+  - Item
+  - Goblin
+  - Sheep
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - Attackable
+  - Water
+  - UI
+  - Tilemap
+  - Obstacle
+  - Player
+  - Enemy
+  - Item
+  - Building
+  - Resource
+  - PopUpText
+  - NPC
+  - Damageable(Obstacles)
+  - PopUps
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Background(Painted)
+    uniqueID: 278748319
+    locked: 0
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: PopUpText
+    uniqueID: 4189463253
+    locked: 0
+  - name: ForegroundParticles
+    uniqueID: 2900932555
+    locked: 0

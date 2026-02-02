@@ -1,0 +1,31 @@
+feedback_id,feedback_name,description,intensity_range
+1,health_increase,Player health increased,0.3-0.7
+2,health_decrease,Player health decreased,0.5-0.9
+3,damage_taken,Player took damage,0.6-1.0
+4,item_consumed,Item was consumed,0.2-0.5
+5,mushroom_consumed,Mushroom was consumed (harmful),0.7-0.9
+6,healing_item_used,Healing item was used,0.4-0.7
+7,enemy_encountered,Enemy was encountered,0.5-0.8
+8,enemy_defeated,Enemy was defeated,0.6-0.8
+9,hazard_encountered,Environmental hazard encountered,0.6-0.9
+10,safe_action,Safe action was performed,0.1-0.3
+11,exploration_success,Successful exploration,0.2-0.4
+12,retreat_success,Successful retreat from danger,0.4-0.6
+13,action_failed,Action could not be performed,0.3-0.6
+14,low_health_warning,Health is critically low,0.7-0.9
+15,inventory_full,Inventory is full,0.2-0.4
+16,item_pickup,Item was picked up,0.2-0.5
+17,gold_gained,Gold was gained,0.3-0.6
+18,experience_gained,Experience was gained,0.2-0.5
+19,level_up,Player leveled up,0.6-0.8
+20,quest_progress,Quest objective progressed,0.4-0.7
+21,npc_interaction,Interacted with NPC,0.2-0.5
+22,shop_interaction,Interacted with shop,0.2-0.4
+23,equipment_changed,Equipment was changed,0.2-0.4
+24,skill_unlocked,New skill was unlocked,0.5-0.7
+25,no_effect,Action had no significant effect,0.0-0.2
+26,movement_success,Movement was successful,0.1-0.3
+27,wait_action,Player waited/did nothing,0.0-0.1
+28,safety_maintained,Safety was maintained,0.2-0.4
+29,threat_avoided,Threat was successfully avoided,0.4-0.6
+30,resource_depleted,Resource was depleted,0.3-0.6

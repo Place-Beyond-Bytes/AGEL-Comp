@@ -1,0 +1,144 @@
+quest_id,quest_name,rule_id,rule,category,description
+1,Find the bag of gold and grab it,1,is_collectible(gold_bag),inventory,Inventory management and item handling
+1,Find the bag of gold and grab it,2,"requires_proximity(grab, gold_bag)",ui,User interface and menu interaction
+1,Find the bag of gold and grab it,3,movement_up(player),movement,Basic movement and navigation
+1,Find the bag of gold and grab it,4,movement_down(player),movement,Basic movement and navigation
+1,Find the bag of gold and grab it,5,movement_left(player),movement,Basic movement and navigation
+1,Find the bag of gold and grab it,6,movement_right(player),movement,Basic movement and navigation
+1,Find the bag of gold and grab it,7,"collision_detection(player, gold_bag)",environment,Environmental awareness and interaction
+1,Find the bag of gold and grab it,8,"inventory_add(player, gold_bag)",inventory,Inventory management and item handling
+1,Find the bag of gold and grab it,9,exploration_success(find_gold),environment,Environmental awareness and interaction
+1,Find the bag of gold and grab it,10,safe_action(movement),movement,Basic movement and navigation
+1,Find the bag of gold and grab it,11,no_threat_present(environment),environment,Environmental awareness and interaction
+1,Find the bag of gold and grab it,12,"loot_interaction(player, gold_bag)",social,NPC interaction and dialogue
+2,Find the goblin and kill it,1,is_enemy(goblin),combat,Combat mechanics and enemy interaction
+2,Find the goblin and kill it,2,has_health(goblin),health,Health management and damage/healing
+2,Find the goblin and kill it,3,"can_attack(player, goblin)",combat,Combat mechanics and enemy interaction
+2,Find the goblin and kill it,4,"weapon_equipped(player, sword)",combat,Combat mechanics and enemy interaction
+2,Find the goblin and kill it,5,"attack_slash(player, goblin)",combat,Combat mechanics and enemy interaction
+2,Find the goblin and kill it,6,"damage_dealt(sword, goblin)",combat,Combat mechanics and enemy interaction
+2,Find the goblin and kill it,7,enemy_health_decrease(goblin),combat,Combat mechanics and enemy interaction
+2,Find the goblin and kill it,8,"combat_positioning(player, goblin)",movement,Basic movement and navigation
+2,Find the goblin and kill it,9,"threat_assessment(goblin, high)",environment,Environmental awareness and interaction
+2,Find the goblin and kill it,10,enemy_defeated(goblin),combat,Combat mechanics and enemy interaction
+2,Find the goblin and kill it,11,experience_gained(combat_victory),combat,Combat mechanics and enemy interaction
+2,Find the goblin and kill it,12,"retreat_option(player, goblin)",environment,Environmental awareness and interaction
+2,Find the goblin and kill it,13,enemy_movement_pattern(goblin),movement,Basic movement and navigation
+2,Find the goblin and kill it,14,"combat_range(melee, close)",combat,Combat mechanics and enemy interaction
+2,Find the goblin and kill it,15,"knockback_effect(attack, goblin)",combat,Combat mechanics and enemy interaction
+2,Find the goblin and kill it,16,"enemy_ai_behavior(goblin, aggressive)",combat,Combat mechanics and enemy interaction
+3,"Find and grab the mushroom, meat, and pumpkin",1,is_collectible(mushroom),inventory,Inventory management and item handling
+3,"Find and grab the mushroom, meat, and pumpkin",2,is_collectible(meat),inventory,Inventory management and item handling
+3,"Find and grab the mushroom, meat, and pumpkin",3,is_collectible(pumpkin),inventory,Inventory management and item handling
+3,"Find and grab the mushroom, meat, and pumpkin",4,inventory_slot_1(player),inventory,Inventory management and item handling
+3,"Find and grab the mushroom, meat, and pumpkin",5,inventory_slot_2(player),inventory,Inventory management and item handling
+3,"Find and grab the mushroom, meat, and pumpkin",6,inventory_slot_3(player),inventory,Inventory management and item handling
+3,"Find and grab the mushroom, meat, and pumpkin",7,"inventory_capacity(player, 3)",inventory,Inventory management and item handling
+3,"Find and grab the mushroom, meat, and pumpkin",8,collection_order_matters(efficiency),environment,Environmental awareness and interaction
+3,"Find and grab the mushroom, meat, and pumpkin",9,path_optimization(multi_target),environment,Environmental awareness and interaction
+3,"Find and grab the mushroom, meat, and pumpkin",10,"item_properties(mushroom, consumable)",inventory,Inventory management and item handling
+3,"Find and grab the mushroom, meat, and pumpkin",11,"item_properties(meat, consumable)",inventory,Inventory management and item handling
+3,"Find and grab the mushroom, meat, and pumpkin",12,"item_properties(pumpkin, consumable)",inventory,Inventory management and item handling
+3,"Find and grab the mushroom, meat, and pumpkin",13,exploration_strategy(systematic),environment,Environmental awareness and interaction
+3,"Find and grab the mushroom, meat, and pumpkin",14,inventory_management(player),inventory,Inventory management and item handling
+3,"Find and grab the mushroom, meat, and pumpkin",15,"pickup_interaction(player, item)",inventory,Inventory management and item handling
+3,"Find and grab the mushroom, meat, and pumpkin",16,collection_completion(all_items),inventory,Inventory management and item handling
+4,"Consume mushroom, then meat",1,is_harmful(mushroom),health,Health management and damage/healing
+4,"Consume mushroom, then meat",2,"causes_damage(consume, mushroom)",combat,Combat mechanics and enemy interaction
+4,"Consume mushroom, then meat",3,"health_decrease(player, mushroom)",health,Health management and damage/healing
+4,"Consume mushroom, then meat",4,is_beneficial(meat),environment,Environmental awareness and interaction
+4,"Consume mushroom, then meat",5,"restores_health(consume, meat)",inventory,Inventory management and item handling
+4,"Consume mushroom, then meat",6,"health_increase(player, meat)",health,Health management and damage/healing
+4,"Consume mushroom, then meat",7,"consumption_order_critical(mushroom, meat)",environment,Environmental awareness and interaction
+4,"Consume mushroom, then meat",8,"harm_detection(player, mushroom)",environment,Environmental awareness and interaction
+4,"Consume mushroom, then meat",9,"healing_detection(player, meat)",health,Health management and damage/healing
+4,"Consume mushroom, then meat",10,"inventory_slot_consumption(player, slot_1)",inventory,Inventory management and item handling
+4,"Consume mushroom, then meat",11,"inventory_slot_consumption(player, slot_2)",inventory,Inventory management and item handling
+4,"Consume mushroom, then meat",12,item_effects_immediate(consumption),inventory,Inventory management and item handling
+4,"Consume mushroom, then meat",13,health_monitoring(player),health,Health management and damage/healing
+4,"Consume mushroom, then meat",14,safety_priority(health_management),health,Health management and damage/healing
+4,"Consume mushroom, then meat",15,avoid_harmful_items(mushroom),inventory,Inventory management and item handling
+4,"Consume mushroom, then meat",16,seek_healing_items(meat),inventory,Inventory management and item handling
+4,"Consume mushroom, then meat",17,damage_taken_feedback(mushroom),combat,Combat mechanics and enemy interaction
+4,"Consume mushroom, then meat",18,healing_received_feedback(meat),health,Health management and damage/healing
+5,Check the stats and consume pumpkin,1,ui_element(stats_panel),ui,User interface and menu interaction
+5,Check the stats and consume pumpkin,2,toggle_stats(player),ui,User interface and menu interaction
+5,Check the stats and consume pumpkin,3,"shows_health(stats_panel, player)",health,Health management and damage/healing
+5,Check the stats and consume pumpkin,4,"shows_inventory(stats_panel, player)",inventory,Inventory management and item handling
+5,Check the stats and consume pumpkin,5,"shows_experience(stats_panel, player)",ui,User interface and menu interaction
+5,Check the stats and consume pumpkin,6,"ui_navigation(player, interface)",movement,Basic movement and navigation
+5,Check the stats and consume pumpkin,7,"interface_interaction(player, stats)",ui,User interface and menu interaction
+5,Check the stats and consume pumpkin,8,information_display(stats_panel),ui,User interface and menu interaction
+5,Check the stats and consume pumpkin,9,ui_toggle_action(open_close),ui,User interface and menu interaction
+5,Check the stats and consume pumpkin,10,interface_feedback(ui_interaction),ui,User interface and menu interaction
+6,Kill two goblins and one sheep,1,is_enemy(sheep),combat,Combat mechanics and enemy interaction
+6,Kill two goblins and one sheep,2,is_enemy(goblin),combat,Combat mechanics and enemy interaction
+6,Kill two goblins and one sheep,3,"multi_target_combat(player, enemies)",combat,Combat mechanics and enemy interaction
+6,Kill two goblins and one sheep,4,"target_prioritization(goblin, sheep)",environment,Environmental awareness and interaction
+6,Kill two goblins and one sheep,5,"threat_level(goblin, high)",environment,Environmental awareness and interaction
+6,Kill two goblins and one sheep,6,"threat_level(sheep, medium)",environment,Environmental awareness and interaction
+6,Kill two goblins and one sheep,7,combat_strategy(multi_enemy),combat,Combat mechanics and enemy interaction
+6,Kill two goblins and one sheep,8,area_awareness(multiple_threats),environment,Environmental awareness and interaction
+6,Kill two goblins and one sheep,9,health_management(combat_extended),combat,Combat mechanics and enemy interaction
+6,Kill two goblins and one sheep,10,combat_fatigue(player),combat,Combat mechanics and enemy interaction
+6,Kill two goblins and one sheep,11,"enemy_coordination(goblin, sheep)",combat,Combat mechanics and enemy interaction
+6,Kill two goblins and one sheep,12,positioning_strategy(multi_combat),movement,Basic movement and navigation
+6,Kill two goblins and one sheep,13,retreat_conditions(overwhelmed),environment,Environmental awareness and interaction
+6,Kill two goblins and one sheep,14,combat_efficiency(target_order),combat,Combat mechanics and enemy interaction
+6,Kill two goblins and one sheep,15,damage_distribution(multiple_enemies),combat,Combat mechanics and enemy interaction
+6,Kill two goblins and one sheep,16,victory_conditions(all_enemies_defeated),environment,Environmental awareness and interaction
+7,Find Purple Bob and interact with him,1,is_npc(purple_bob),social,NPC interaction and dialogue
+7,Find Purple Bob and interact with him,2,has_dialogue(purple_bob),social,NPC interaction and dialogue
+7,Find Purple Bob and interact with him,3,"social_interaction(player, purple_bob)",social,NPC interaction and dialogue
+7,Find Purple Bob and interact with him,4,"npc_location(purple_bob, fixed)",social,NPC interaction and dialogue
+7,Find Purple Bob and interact with him,5,"dialogue_trigger(player, purple_bob)",social,NPC interaction and dialogue
+7,Find Purple Bob and interact with him,6,"conversation_state(active, inactive)",environment,Environmental awareness and interaction
+7,Find Purple Bob and interact with him,7,"npc_response(purple_bob, player)",social,NPC interaction and dialogue
+7,Find Purple Bob and interact with him,8,"social_protocol(greeting, conversation)",social,NPC interaction and dialogue
+7,Find Purple Bob and interact with him,9,"interaction_key(player, interact_button)",social,NPC interaction and dialogue
+7,Find Purple Bob and interact with him,10,dialogue_progression(advance_dialogue),social,NPC interaction and dialogue
+7,Find Purple Bob and interact with him,11,"npc_ai_behavior(purple_bob, friendly)",social,NPC interaction and dialogue
+7,Find Purple Bob and interact with him,12,quest_giver_role(purple_bob),quest,Quest mechanics and progression
+8,Find Brother Blue and report back to Purple Bob,1,is_npc(brother_blue),social,NPC interaction and dialogue
+8,Find Brother Blue and report back to Purple Bob,2,"quest_chain(purple_bob, brother_blue)",quest,Quest mechanics and progression
+8,Find Brother Blue and report back to Purple Bob,3,"information_transfer(player, npc)",social,NPC interaction and dialogue
+8,Find Brother Blue and report back to Purple Bob,4,quest_state_tracking(active_quest),quest,Quest mechanics and progression
+8,Find Brother Blue and report back to Purple Bob,5,"social_network(purple_bob, brother_blue)",social,NPC interaction and dialogue
+8,Find Brother Blue and report back to Purple Bob,6,reporting_protocol(quest_completion),quest,Quest mechanics and progression
+8,Find Brother Blue and report back to Purple Bob,7,"npc_relationship(purple_bob, brother_blue, brothers)",social,NPC interaction and dialogue
+8,Find Brother Blue and report back to Purple Bob,8,"quest_objective_sequence(find, report)",quest,Quest mechanics and progression
+8,Find Brother Blue and report back to Purple Bob,9,location_tracking(brother_blue),environment,Environmental awareness and interaction
+8,Find Brother Blue and report back to Purple Bob,10,dialogue_context(quest_related),social,NPC interaction and dialogue
+8,Find Brother Blue and report back to Purple Bob,11,completion_verification(report_back),quest,Quest mechanics and progression
+8,Find Brother Blue and report back to Purple Bob,12,quest_chain_progression(multi_step),quest,Quest mechanics and progression
+8,Find Brother Blue and report back to Purple Bob,13,npc_memory(previous_interaction),social,NPC interaction and dialogue
+8,Find Brother Blue and report back to Purple Bob,14,social_obligation(complete_quest),social,NPC interaction and dialogue
+8,Find Brother Blue and report back to Purple Bob,15,"information_relay(player, messenger)",environment,Environmental awareness and interaction
+9,Kill one more goblin,1,"skill_transfer(combat, goblin)",combat,Combat mechanics and enemy interaction
+9,Kill one more goblin,2,pattern_recognition(similar_enemy),combat,Combat mechanics and enemy interaction
+9,Kill one more goblin,3,efficiency_improvement(repeated_task),environment,Environmental awareness and interaction
+9,Kill one more goblin,4,learned_behavior(combat_goblin),combat,Combat mechanics and enemy interaction
+9,Kill one more goblin,5,skill_application(previous_knowledge),skill,Skill system and character progression
+9,Kill one more goblin,6,combat_experience(goblin_type),combat,Combat mechanics and enemy interaction
+9,Kill one more goblin,7,behavioral_pattern(enemy_goblin),combat,Combat mechanics and enemy interaction
+9,Kill one more goblin,8,knowledge_reuse(combat_strategy),combat,Combat mechanics and enemy interaction
+9,Kill one more goblin,9,performance_optimization(familiar_task),environment,Environmental awareness and interaction
+9,Kill one more goblin,10,muscle_memory(combat_actions),combat,Combat mechanics and enemy interaction
+10,"Kill goblin by standing top, convert to archer, and shoot",1,"class_change(player, archer)",skill,Skill system and character progression
+10,"Kill goblin by standing top, convert to archer, and shoot",2,"equipment_change(sword, bow)",ui,User interface and menu interaction
+10,"Kill goblin by standing top, convert to archer, and shoot",3,"weapon_type(bow, ranged)",combat,Combat mechanics and enemy interaction
+10,"Kill goblin by standing top, convert to archer, and shoot",4,positioning_strategy(ranged_combat),movement,Basic movement and navigation
+10,"Kill goblin by standing top, convert to archer, and shoot",5,ability_unlock(archer_skills),skill,Skill system and character progression
+10,"Kill goblin by standing top, convert to archer, and shoot",6,skill_tree_progression(player),skill,Skill system and character progression
+10,"Kill goblin by standing top, convert to archer, and shoot",7,tactical_advantage(ranged_position),movement,Basic movement and navigation
+10,"Kill goblin by standing top, convert to archer, and shoot",8,complex_sequence_planning(multi_step),environment,Environmental awareness and interaction
+10,"Kill goblin by standing top, convert to archer, and shoot",9,"equipment_toggle(player, weapon)",combat,Combat mechanics and enemy interaction
+10,"Kill goblin by standing top, convert to archer, and shoot",10,"combat_style_change(melee, ranged)",combat,Combat mechanics and enemy interaction
+10,"Kill goblin by standing top, convert to archer, and shoot",11,strategic_positioning(high_ground),movement,Basic movement and navigation
+10,"Kill goblin by standing top, convert to archer, and shoot",12,skill_activation(archer_abilities),skill,Skill system and character progression
+10,"Kill goblin by standing top, convert to archer, and shoot",13,"combat_range(ranged, distance)",combat,Combat mechanics and enemy interaction
+10,"Kill goblin by standing top, convert to archer, and shoot",14,"projectile_mechanics(arrow, bow)",environment,Environmental awareness and interaction
+10,"Kill goblin by standing top, convert to archer, and shoot",15,target_acquisition(ranged_combat),combat,Combat mechanics and enemy interaction
+10,"Kill goblin by standing top, convert to archer, and shoot",16,combat_versatility(multiple_styles),combat,Combat mechanics and enemy interaction
+10,"Kill goblin by standing top, convert to archer, and shoot",17,"advanced_tactics(positioning, timing)",movement,Basic movement and navigation
+10,"Kill goblin by standing top, convert to archer, and shoot",18,skill_mastery(archer_class),skill,Skill system and character progression

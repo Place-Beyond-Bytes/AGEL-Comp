@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2649f57a122554f589f5ffffa749986c, type: 3}
+  m_Name: PurpleBob_Quest_CommentBox and LikeButton_Complete
+  m_EditorClassIdentifier: 
+  lines:
+  - speaker: {fileID: 11400000, guid: be72870669a66497ab94a1984ac758b9, type: 2}
+    text: I see you've found my epic items. Please, be sure to use them.
+  options: []
+  requiredNPCs: []
+  requiredLocations: []
+  requiredItems:
+  - {fileID: 11400000, guid: 6c4ae02ebe685462f969a159b39b47b4, type: 2}
+  - {fileID: 11400000, guid: a6dda0dddbe1542248957696e5f2ab65, type: 2}
+  removeAfterPlay: 1
+  removeTheseOnPlay:
+  - {fileID: 11400000, guid: 6d9a4ae649307404d8c4124d442e6240, type: 2}

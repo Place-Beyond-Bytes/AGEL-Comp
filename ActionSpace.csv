@@ -1,0 +1,33 @@
+action_id,action_name,description,key(s)/trigger
+1,move_up,Move the player up,UpArrow/W
+2,move_down,Move the player down,DownArrow/S
+3,move_left,Move the player left,LeftArrow/A
+4,move_right,Move the player right,RightArrow/D
+5,explore,Explore the environment,Logic/LLM
+6,attack_slash,Perform a melee attack,Slash
+7,shoot_bow,Shoot an arrow,Shoot
+8,retreat,Move away from enemies,Logic/LLM
+9,assess_enemy_threat,Assess threat from nearby enemies,Logic/LLM
+10,grab,Pick up or loot an item,Collision/loot
+11,drop_item,Drop an item from inventory,UI
+12,consume_slot_1,Use/consume item in inventory slot 1,7
+13,consume_slot_2,Use/consume item in inventory slot 2,8
+14,consume_slot_3,Use/consume item in inventory slot 3,9
+15,use_healing_item,Use any healing item,Logic/LLM/Inventory
+16,avoid_consuming_mushrooms,Avoid eating mushrooms,Logic/LLM
+17,find_healing,Search for healing items,Logic/LLM
+18,maintain_safety,Take actions to stay safe,Logic/LLM
+19,change_equipment,Toggle between sword and bow,Q/ChangeEquipment
+20,interact,Interact with NPCs, objects, shopkeepers, etc.,Interact/E/F
+21,advance_dialogue,Progress dialogue with NPC,Interact/E/F
+22,open_shop,Open the shop interface,Interact (near shopkeeper)
+23,close_shop,Close the shop interface,Cancel/Esc/Backspace
+24,toggle_stats,Open/close the stats window,ToggleStats
+25,toggle_skill_tree,Open/close the skill tree,ToggleSkillTree
+26,wait,Do nothing for a turn,Logic/LLM
+27,avoid_hazards,Move away from hazards,Logic/LLM
+28,move_away_from_hazards,Move away from hazards,Logic/LLM
+29,gain_experience,Gain experience (debug),Return/Enter (debug)
+30,test_print_world_model,Print world model (debug),P (debug)
+31,test_print_episodic_memory,Print episodic memory (debug),M (debug)
+32,test_run_episode,Run test episode (debug),T (debug) 

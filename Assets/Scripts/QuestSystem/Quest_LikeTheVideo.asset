@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 077d444e6e21f47aabc48e4a2f08b99f, type: 3}
+  m_Name: Quest_LikeTheVideo
+  m_EditorClassIdentifier: 
+  questName: Like The Video
+  questDescription: Take a moment to hit the like button, since Matt works hard and
+    it makes him feel good when you do it.
+  questLevel: 99
